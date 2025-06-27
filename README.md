@@ -3,12 +3,12 @@
 
 A Python library designed to generate and visualize dependency graphs of theorems formalized in Lean embedded in Euclidean N-space.
 
-## About The Project 📈:
+## About The Project 📈
 *insert info, i.e. "In particular, we parse the collection of roughly 600k Lean proofs for theorem names and dependencies, then create an embedding using PyKEEN."
 
 ## Getting Started 🚀
 
-### Requirements 📝
+### Requirements
 * insert list of required libraries.
 
 ### Installation
