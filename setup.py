@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='lean-kg',
-    version='0.1.0-alpha',
+    version='0.1.2-alpha',
     packages=find_packages(),
     install_requires=[
         'pykeen',
