@@ -22,6 +22,14 @@ jobs:
         # Install build and twine
         pip install build twine
 
+      # Add this debugging step
+    - name: Verify setup.py version
+      run: |
+        # Navigate to the package root directory where setup.py is located
+        cd lean-kg
+        # Use Python to read the version from setup.py and print it
+        python -c "import setuptools; setup_args = {}; exec(open('setup.py').read(), {'setup': lambda **kw: setup_args.update(kw)}); print(f'Version from setup.py: {setup_args.get(\'version\')}')"
+
     - name: Build package
       run: python -m build
 
