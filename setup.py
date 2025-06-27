@@ -14,7 +14,7 @@ setup(
         'pandas',
         'torch'
     ],
-    author='Ritik Jain'
+    author='Ritik Jain',
     author_email='rjain92682@gmail.com', 
     description='A library for generating and visualizing mathlib4 as a directed multigraph.',
     long_description=open('README.md').read(),
