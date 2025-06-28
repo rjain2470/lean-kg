@@ -1,5 +1,7 @@
 # Lean-KG 🌪️
 
+[![Lean-KG interactive demo](docs/lean-kg-demo.png)](https://rjain2470.github.io/lean-kg/lean-kg-demo.html)
+
 A Python library designed to generate and visualize dependency graphs of theorems formalized in Lean embedded in Euclidean N-space.
 
 ## About The Project 📈
