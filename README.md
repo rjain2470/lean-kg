@@ -1,10 +1,9 @@
-
 # Lean-KG 🌪️
 
 A Python library designed to generate and visualize dependency graphs of theorems formalized in Lean embedded in Euclidean N-space.
 
 ## About The Project 📈
-*insert info, i.e. "In particular, we parse the collection of roughly 600k Lean proofs for theorem names and dependencies, then create an embedding using PyKEEN."
+We compile the collection of theorems in mathlib4, a massive collection of formal statements in Lean, together with their proofs. We then parse the proofs of each theorem for instances of other theorems to uncover dependencies, and store this data in a massive multiple directed graph G. We can then (i) extract subgraphs of G representing sublibraries in mathlib4 (e.g. GroupTheory, MeasureTheory, Topology, etc.), (ii) plot G as an interactive colored graph in 2D space using the Plotly library, and (iii) embed G in N-dimensional space using PyKEEN to analyze the hierarchical and relationality structure of library.
 
 ## Getting Started 🚀
 
