@@ -7,15 +7,40 @@ We compile the collection of theorems in mathlib4, a massive collection of forma
 
 ## Getting Started 🚀
 
-### Requirements
-* insert list of required libraries.
+### Requirements ✨
 
-### Installation
+- pykeen[all]
+- numpy
+- scipy
+- pandas
+- torch
+- networkx
+- matplotlib
+- plotly
+- google-colab (if you are running on Colab).
 
-You can install `lean-kg` using pip from TestPyPI:
-```bash
-pip install --index-url https://test.pypi.org/simple/ lean-kg
+You can import all of the required libraries with the following code snippet.
+```python
+!pip install -q pykeen[all] # Install pykeen and mathlib4
+!git clone https://github.com/leanprover-community/mathlib4.git
+
+# imports
+import pathlib, os, re, logging, multiprocessing, matplotlib, numpy as np, random
+import matplotlib.pyplot as plt, csv, networkx as nx, torch, pandas as pd
+import plotly.graph_objects as go, matplotlib.cm as cm, matplotlib.colors as mcolors
+import plotly.express as px
+from plotly.subplots import make_subplots
+from collections import deque
+from scipy.optimize import minimize
+from matplotlib.cm import get_cmap
+from google.colab import files
+from typing import Iterable, Union, List, Tuple
+from pykeen.pipeline import pipeline
+from pykeen.triples import TriplesFactory
+
+EPS = 1e-9  # epsilon for numerical safety
 ```
+
 ## Usage 🤖
 
 Here is a basic sample implementation of the package, assuming all relevant libraries are imported:
