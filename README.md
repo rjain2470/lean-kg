@@ -30,7 +30,7 @@ We compile the collection of theorems in mathlib4, a massive collection of forma
 - networkx
 - matplotlib
 - plotly
-- google-colab (if you are running on Colab).
+- google-colab (if you are running on Colab)
 
 You can import all of the required libraries with the following code snippet.
 ```python
