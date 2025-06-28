@@ -675,7 +675,7 @@ def plot_euclidean_graph(G, pos=None, color_by="type"):
         yaxis_scaleanchor="x",  # Lock aspect ratio
         showlegend=False
     )
-    fig.show()
+    return fig
 
 def prune_graph(G,
                 remove_isolated=True,
