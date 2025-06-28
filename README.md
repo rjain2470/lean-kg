@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <em>Interactive sample dependency graph of <code>mathlib4</code> (20k nodes). Click to explore!</em>
+  <em>Interactive sample dependency graph of <code>mathlib4</code> (20k nodes). Click on the image to explore!</em>
 </p>
 
 
@@ -83,9 +83,11 @@ result = train_knowledge_graph_embedding(
  )
 lean_kg.summarize_pykeen_metrics(result.metric_results.to_dict()) # Outputs performance metrics of the embedding (MR, MRR, Hits@k)
 ```
+## Limitations 🚩
+As of right now, lean-kg is currently only available on TestPyPI, and is still in development.
 
-## License
+## License ⚖️
 Distributed under the MIT License. See LICENSE.txt for more information.
 
-## Contact
+## Contact 📞
 Ritik Jain - https://www.linkedin.com/in/ritik-jain-91a201220/ - rjain92682@gmail.com
