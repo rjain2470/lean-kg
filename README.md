@@ -53,7 +53,7 @@ from pykeen.triples import TriplesFactory
 
 EPS = 1e-9  # epsilon for numerical safety
 ```
-To download <code>lean-kg/code> itself, you must run the following code snippet.\
+To download <code>lean-kg</code> itself, you must run the following code snippet.
 ```bash
 pip install -i https://test.pypi.org/simple/ lean-kg
 ```
