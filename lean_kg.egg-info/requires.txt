@@ -1,7 +1,0 @@
-pykeen[all]
-networkx
-plotly
-matplotlib
-numpy
-pandas
-torch
