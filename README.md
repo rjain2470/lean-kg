@@ -1,4 +1,4 @@
-# Lean-KG 🌪️
+<h1 align="center">Lean-KG 🌪️</h1>
 
 <p align="center">
   <a href="https://rjain2470.github.io/lean-kg/lean-kg-demo.html">
@@ -16,11 +16,11 @@
 A Python library designed to generate and visualize the dependency graph of the collection of theorems formalized in Lean.
 
 ## About The Project 📈
-We compile the collection of theorems in mathlib4, a massive collection of formal statements in Lean, together with their proofs. We then parse the proofs of each theorem for instances of other theorems to uncover dependencies, and store this data in a massive multiple directed graph G. We can then (i) extract subgraphs of G representing sublibraries in mathlib4 (e.g. GroupTheory, MeasureTheory, Topology, etc.), (ii) plot G as an interactive colored graph in 2D space using the Plotly library, and (iii) embed G in N-dimensional space using PyKEEN to analyze the hierarchical and relational structure of library.
+We compile the collection of theorems in mathlib4, a massive collection of formal statements in Lean, together with their proofs. We then parse the proofs of each theorem for instances of other theorems to uncover dependencies, and store this data in a massive multi-directed graph G. We can then (i) extract subgraphs of G representing sublibraries in mathlib4 (e.g. GroupTheory, MeasureTheory, Topology, etc.), (ii) plot G as an interactive colored graph in 2D space using the Plotly library, and (iii) embed G in N-dimensional space using PyKEEN to analyze the hierarchical and relational structure of the library.
 
 ## Getting Started 🚀
 
-### Requirements ✨
+### Installation ✨
 
 - pykeen[all]
 - numpy
@@ -59,13 +59,11 @@ EPS = 1e-9  # epsilon for numerical safety
 Here is a basic sample implementation of the package, assuming all relevant libraries are imported:
 ```python
 import lean_kg
-!pip install -q pykeen[all] # Install pykeen
-!git clone https://github.com/leanprover-community/mathlib4.git # Clone mathlib4
 
 # Example: Build a dependency graph
 G_full = lean_kg.build_dependency_graph("mathlib4/Mathlib", num_workers=4) # Builds full dependency graph
-G_sample = lean_kg.expand_sample_graph(G_pruned, k=1000, max_nodes=1000) # Samples a random subgraph of 1000 nodes
-G_group = extract_subgraph_by_subdir(G_full, "GroupTheory") # Extracts subgraph of statements from Group Theory
+G_sample = lean_kg.expand_sample_graph(G_full, k=1000, max_nodes=1000) # Samples a random subgraph of 1000 nodes
+G_group = lean_kg.extract_subgraph_by_subdir(G_full, "GroupTheory") # Extracts subgraph of statements from Group Theory
 
 # Example: Plot interactive graph on the Euclidean plane
 fig = lean_kg.plot_euclidean_graph(G, color_by="weighted_edges")
