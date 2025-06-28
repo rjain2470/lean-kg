@@ -86,7 +86,7 @@ result = train_knowledge_graph_embedding(
 lean_kg.summarize_pykeen_metrics(result.metric_results.to_dict()) # Outputs performance metrics of the embedding (MR, MRR, Hits@k)
 ```
 ## Limitations 🚩
-As of June 2025, lean-kg is only available on TestPyPI, and is still in development.
+As of July 2025, <code>lean-kg</code> is only available on TestPyPI, and is still in development.
 
 ## License ⚖️
 Distributed under the MIT License. See LICENSE.txt for more information.
