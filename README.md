@@ -21,7 +21,7 @@ We compile the collection of theorems in mathlib4, a massive collection of forma
 ## Getting Started 🚀
 
 ### Installation ✨
-The required libraries to use the <code>lean-kg</code> package are as follows.
+The required libraries to use the <code>lean_kg</code> package are as follows.
 - pykeen[all]
 - numpy
 - scipy
@@ -53,9 +53,9 @@ from pykeen.triples import TriplesFactory
 
 EPS = 1e-9  # epsilon for numerical safety
 ```
-To download <code>lean-kg</code> itself, you must run the following code snippet.
+To download <code>lean_kg</code> itself, you must run the following code snippet.
 ```bash
-pip install -i https://test.pypi.org/simple/ lean-kg
+pip install -i https://test.pypi.org/simple/ lean_kg
 ```
 
 ## Usage 🤖
@@ -86,7 +86,7 @@ result = train_knowledge_graph_embedding(
 lean_kg.summarize_pykeen_metrics(result.metric_results.to_dict()) # Outputs performance metrics of the embedding (MR, MRR, Hits@k)
 ```
 ## Limitations 🚩
-As of July 2025, <code>lean-kg</code> is only available on TestPyPI, and is still in development.
+As of July 2025, <code>lean_kg</code> is only available on TestPyPI, and is still in development.
 
 ## License ⚖️
 Distributed under the MIT License. See LICENSE.txt for more information.

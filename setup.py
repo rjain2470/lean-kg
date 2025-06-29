@@ -4,7 +4,8 @@ from setuptools import setup, find_packages
 setup(
     name='lean-kg',
     version='v0.1.6-alpha',
-    packages=find_packages(),
+    packages=find_packages('lean_kg'),
+    package_dir={'': 'lean_kg'},
     install_requires=[
         'pykeen',
         'networkx',
