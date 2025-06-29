@@ -1,5 +1,6 @@
 
 import pathlib, csv, random, torch, numpy as np
+import networkx as nx
 from pykeen.pipeline import pipeline
 from pykeen.triples import TriplesFactory
 
